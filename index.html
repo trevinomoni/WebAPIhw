@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="question-container" class="hide">
+
+            <section id="questions" class="hidden-section">
+                <div class="row text-right">
+                    <div class="col-12">
+                        <h2>Time left: <span id="time-left">
+
+                            </span></h2>
+                    </div>
+                </div>
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn btn-primary" id="option1">Answer 1</button>
+                    <button class="btn btn-primary" id="option2">Answer 2</button>
+                    <button class="btn btn-primary" id="option3">Answer 3</button>
+                    <button class="btn btn-primary" id="option4">Answer 4</button>
+                </div>
+                <h4 id="feedback"></h4>
+            </section>
+            <section id="score" class="hidden-section">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-control">
+                            <label for="initials">Enter your initials</label>
+                            <input type="text" name="intials" id="initials">
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-success" id="submit" type="button">Submit Score</button></div>
+            </section>
+
+            <section id="start">
+                <div class="controls">
+                    <h1>Click to start the quiz!</h1>
+                    <button id="start-btn" class="start-btn btn btn-primary">Start</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="WebAPIhw.js"></script>
+</body>
+
+</html>
